@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART Goals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <img class = "logo" src="images/Logo.png" alt="Logo site">
+
+        <ul class="navtabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="newgoal.html">New goal</a></li>
+            <li><a href="SMART.html">SMART</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+        </ul>
+    </div>
+    <div style = "display: flex; justify-content: center;">
+        <div class = "zwevend">
+            <div class = "zwevendinner" style = "max-width: 600px;">
+            <h2>
+                Targets can be made just as you want them. Look at one of the examples and make a choice!
+            </h2>
+            <p class = "forms">
+                The following forms of targets are possible:
+                <div style = "margin-top: 10px;">
+                    <form class="grid_item_target" id="example" style = "padding-left: 20px;">
+            
+                        <label for="check">A checkable box:</label>
+                        <input id="check" type="checkbox" value="User target 1"/>
+                        
+                        <label for="drink">An adjustable bar with self-chosen range:</label>
+                        <input type="range" id="drink" name="drink" min="0" max="8">
+            
+                        <label for="money">A numberic value:</label>
+                        <input id="money" type="number" value="User target 2"/>
+                    </form>
+                </div>
+            </p>
+            <div class = "line"></div>
+            <form class = "forms" action="/overview.html", method="post">
+                <label for="targetname">Target name:</label><br>
+                <input type="text" id="targetname" name="Target name"><br>
+
+                <label for="type">Type of target:</label><br>
+
+                <label for = "checkbox"><input type = "radio" value = "checkbox" name = "checkbox"> A checkable box</label> 
+                <label for = "bar"><input type = "radio" value = "bar" name = "bar"> An adjustable bar</label>
+                <label for = "numeric"><input type = "radio" value = "numeric" name = "numeric"> A numeric value</label>
+
+                <br>
+                <label for="targetgoal">What is the value of your target (skip in case of a checkable box):</label><br>
+                <input type="number" id="targetgoal" name="Target goal"><br>
+
+                <button class="button" style="grid-column: span 2; cursor: pointer;">Save</button>
+              </form>
+            </div>
+            
+        </div>
+    </body>
+</html>

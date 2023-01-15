@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART Goals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <img class = "logo" src="images/Logo.png" alt="Logo site">
+
+        <ul class="navtabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="newgoal.html">New goal</a></li>
+            <li><a href="SMART.html">SMART</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+        </ul>
+    </div>
+    <div style = "display: flex; justify-content: center;">
+        <div class = "zwevend">
+            <div class = "zwevendinner" style = "max-width: 600px;">
+            <h2 style="margin: auto;">
+                It's great that you want to add a new goal! For more information about SMART goals 
+                <a href = "SMART.html" style = "color: black;">click here</a>. 
+            </h2>
+
+            <h3>
+                Here you can specify the name of your goal and its due date. Once it has been added
+                you can add targets in to it in the overview section.
+            </h3>
+
+            <form class = "new_goal" action="/postnewgoal.html" style="display: grid;">
+                <label for="goalname" style="align-self: auto;">Goal name:</label>
+                <input type="text" id="goalname">
+
+                <label for="s">Specific:</label>
+                <textarea type="text" rows="5" id="s"></textarea>
+
+                <label for="m">Measurable:</label>
+                <textarea type="text" rows="5" id="m"></textarea>
+
+                <label for="a">Assignable:</label>
+                <textarea type="text" rows="5" id="a"></textarea>
+
+                <label for="r">Relevant:</label>
+                <textarea type="text" rows="5" id="r"></textarea>
+
+                <label for="t" style="align-self: auto;">Time-bound:</label>
+                <input type="date" id="t" name="Time-bound">
+                <!-- lol -->
+                <!-- https://stackoverflow.com/questions/7372038/is-there-any-way-to-change-input-type-date-format -->
+
+                <button class="button" style="grid-column: span 2; cursor: pointer;">Save</button>
+              </form>
+            </div>
+            
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART Goals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <img class = "logo" src="images/Logo.png" alt="Logo site">
+
+        <ul class="navtabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="newgoal.html">New goal</a></li>
+            <li><a href="SMART.html">SMART</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+        </ul>
+    </div>
+    <div style = "display: flex; justify-content: center;">
+        <div class = "zwevend">
+            <div class = "zwevendinner" style = "max-width: 600px;">
+            <h2>
+                We are so glad you want to start with SMART Goals! Please fill in this form to create an account.
+            </h2>
+            <form class = "forms" action="/postsignup.html">
+                <label for="userid">User ID:</label>
+                <input type="text" id="userid" name="User ID">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="Password">
+
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="password" name="Password">
+
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="Full name">
+                
+                <label for="e-mail">E-mail:</label>
+                <input type="email" id="e-mail" name="E-mail">
+                
+                <label for="adresss">Address:</label>
+                <input type="text" id="address" name="Address">
+                
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="Country">
+                
+                <label for="zipcode">Zip code:</label>
+                <input type="text" id="zipcode" name="Zip code">
+                
+                <label for="language">Language:</label>
+                <input type="text" id="language" name="Language">
+                
+                <label for="gender">Gender:</label>
+                <label for="female"><input name="gender" type="radio" value="Female"/> Female</label>
+                <label for="male"> <input name="gender" type="radio" value="Male"/> Male</label>
+                <label for="other"> <input name="gender" type="radio" value="Other"/> Other</label><br>
+                
+                <label for="bio">Bio:</label>
+                <textarea rows="10" cols="20" name="bio"></textarea> <br>
+                
+                <button class="button">Sign up</button>
+                <p class = "smalllink"><em><a href="/signin.html">Already a member? Sign in here</a></em></p>
+              </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

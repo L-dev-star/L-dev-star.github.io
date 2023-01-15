@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART Goals</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <img class = "logo" src="images/Logo.png" alt="Logo site">
+
+        <ul class="navtabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="newgoal.html">New goal</a></li>
+            <li><a href="SMART.html">SMART</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+        </ul>
+    </div>
+
+    <div class="overview_grid_header">
+        <h1 class="header">Goals</h1>
+        <h1 class="header">Targets</h1>
+        <h1 class="header">Progress</h1>
+    </div>
+
+    <!-- Every goal is a 3x2 grid: | goal | target | progress | Expand button | -->
+    <div class="overview_grid_row">
+
+        <!-- Goal: grid_item_goal is a 1x3 grid with the name of the goal and the two buttons -->
+        <div class="grid_item_goal">
+            <h3 style="text-align: center;">Name of goal <br> (due: yyyy/mm/dd)</h3>
+            <!-- TODO: functionality of buttons -->
+            <a class="goalbutton" href="newtarget.html">New target</a>
+            <a class="goalbutton" href="overview.html">Remove goal</a>
+        </div>
+
+        <!-- Target: contains the form which we can retrieve the info from. -->
+        <div style="align-self: end;">
+            <form class="grid_item_target" id="goal1" style="display: grid;">
+    
+                <label for="check">Call plumber</label>
+                <input id="check" type="checkbox" value="User target 1"/>
+    
+                <label for="check">Go to the dentist</label>
+                <input id="check" type="checkbox" value="User target 2"/>
+                
+                <label for="drink">Drink 8 glasses of water:</label>
+                <input type="range" id="drink" name="drink" min="0" max="8">
+    
+                <label for="money">Put money into savings</label>
+                <input id="money" type="number" value="User target 2"/>
+            
+                <button class="goalbutton" type="submit" form="goal1" style="grid-column: span 2; cursor: pointer;">Update progress</button>
+            </form>
+        </div>
+        
+        <!-- Progress: bar will update based on the form in the target-section. -->
+        <div class="grid_item_progress">
+            <progress value="42" max="100"></progress>
+        </div>
+
+        <a type="button" class="goalbutton" href="/expandedview.html">Expand view</a>
+    </div>
+
+    <div class="overview_grid_row">
+
+        <!-- Goal: grid_item_goal is a 1x3 grid with the name of the goal and the two buttons -->
+        <div class="grid_item_goal">
+            <h3 style="text-align: center;">Name of goal <br> (due: yyyy/mm/dd)</h3>
+            <!-- TODO: functionality of buttons -->
+            <a class="goalbutton" href="newtarget.html">New target</a>
+            <a class="goalbutton" href="overview.html">Remove goal</a>
+        </div>
+
+        <!-- Target: contains the form which we can retrieve the info from. -->
+        <div style="align-self: end;">
+            <form class="grid_item_target" id="goal1" style="display: grid;">
+    
+                <label for="check">Hand in CSE1500 assignmeent 1</label>
+                <input id="check" type="checkbox" value="User target 1"/>
+    
+                <label for="check">Study for CSE1300</label>
+                <input id="check" type="checkbox" value="User target 2"/>
+            
+            
+                <button class="goalbutton" type="submit" form="goal1" style="grid-column: span 2; cursor: pointer;">Update progress</button>
+            </form>
+        </div>
+        
+        <!-- Progress: bar will update based on the form in the target-section. -->
+        <div class="grid_item_progress">
+            <progress value="42" max="100"></progress>
+        </div>
+
+        <a type="button" class="goalbutton" href="/expandedview.html">Expand view</a>
+    </div>
+    </body>
+</html>
